@@ -1,6 +1,6 @@
 "use strict";
 
-class Face {
+export default class Face {
 	/**
 	 * This class represents a face in a {@link module:Core.Mesh Mesh}.
 	 * @constructor module:Core.Face

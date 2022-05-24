@@ -1,6 +1,6 @@
 "use strict";
 
-class SparseMatrix {
+export default class SparseMatrix {
 	/**
 	 * This class represents a m by n real matrix where only nonzero entries
 	 * are stored explicitly. Do not create a SparseMatrix from its constructor,

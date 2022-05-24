@@ -12,7 +12,7 @@
  *
  * @module LinearAlgebra
  */
-class Vector {
+export default class Vector {
 	/**
 	 * This class represents an element of Euclidean 3-space, along with all the usual
 	 * vector space operations (addition, multiplication by scalars, etc.).

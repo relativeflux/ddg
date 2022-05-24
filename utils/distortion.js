@@ -5,7 +5,7 @@
  * a parameterization algorithm.
  * @memberof module:Utils
  */
-class Distortion {
+export default class Distortion {
 	/**
 	 * Computes the quasi conformal error on a face.
 	 * @private

@@ -23,7 +23,7 @@
  *
  * @module Core
  */
-class Halfedge {
+ export default class Halfedge {
 	/**
 	 * This class defines the connectivity of a {@link module:Core.Mesh Mesh}.
 	 * @constructor module:Core.Halfedge

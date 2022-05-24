@@ -2042,7 +2042,7 @@ let grayscale = [
  * @param {number} max The maximum value of x.
  * @returns {number}
  */
-function clamp(x, min, max) {
+export function clamp(x, min, max) {
 	return Math.max(Math.min(x, max), min);
 }
 
@@ -2057,7 +2057,7 @@ function clamp(x, min, max) {
  * are {@link https://matplotlib.org/examples/color/colormaps_reference.html seismic, coolwarm and hot}.
  * @returns {module:LinearAlgebra.Vector}
  */
-function colormap(x, min, max, values) {
+export function colormap(x, min, max, values) {
 	x = Math.max(Math.min(x, max), min);
 	x = (x - min) / (max - min);
 

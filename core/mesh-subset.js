@@ -1,6 +1,6 @@
 "use strict";
 
-class MeshSubset {
+export default class MeshSubset {
         /**
          * This class represents a subset of a {@link module:Core.Mesh Mesh}
          * @constructor module:Core.MeshSubset

@@ -1,6 +1,6 @@
 "use strict";
 
-class Edge {
+export default class Edge {
 	/**
 	 * This class represents an edge in a {@link module:Core.Mesh Mesh}.
 	 * @constructor module:Core.Edge

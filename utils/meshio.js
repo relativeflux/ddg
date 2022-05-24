@@ -1,17 +1,19 @@
 "use strict";
 
+import Vector from "./../linear-algebra/vector.js";
+
 /**
  * This class converts text from 3D file formats such as OBJ to a polygon soup mesh
  * and vice versa.
  * @memberof module:Utils
  */
-class MeshIO {
+export default class MeshIO {
 	/**
 	 * Converts text from an OBJ file to a polygon soup mesh.
 	 * @static
 	 * @param {string} input The text from an OBJ file containing vertex positions
 	 * and indices.
-	 * @returns {Object} A polygon soup mesh containing vertex positions and indices.
+	 * @returns {{v: LinearAlgebra.Vector[], f: number[]}} A polygon soup mesh containing vertex positions and indices.
 	 * Vertex positions and indices are keyed by "v" and "f" respectively.
 	 */
 	static readOBJ(input) {

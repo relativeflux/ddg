@@ -1,6 +1,6 @@
 "use strict";
 
-class Vertex {
+export default class Vertex {
 	/**
 	 * This class represents a vertex in a {@link module:Core.Mesh Mesh}.
 	 * @constructor module:Core.Vertex

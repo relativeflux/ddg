@@ -4,7 +4,7 @@
  * This class implements frequently used numerical algorithms such as the inverse power method.
  * @memberof module:Utils
  */
-class Solvers {
+export default class Solvers {
 	/**
 	 * Computes the residual of Ax - λx, where x has unit norm and λ = x.Ax.
 	 * @param {module:LinearAlgebra.ComplexSparseMatrix} A The complex sparse matrix whose eigen decomposition

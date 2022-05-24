@@ -1,6 +1,6 @@
 "use strict";
 
-class ComplexDenseMatrix {
+export default class ComplexDenseMatrix {
 	/**
 	 * This class represents a m by n complex matrix where every entry, including
 	 * zero-valued entries, is stored explicitly. Do not create a ComplexDenseMatrix

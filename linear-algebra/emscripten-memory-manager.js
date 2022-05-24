@@ -1,6 +1,6 @@
 "use strict";
 
-class EmscriptenMemoryManager {
+export default class EmscriptenMemoryManager {
 	/**
 	 * This class serves as a semi automatic memory manager/garbage collector
 	 * for objects that internally store data and perform operations on the {@link http://emscripten.org emscripten}

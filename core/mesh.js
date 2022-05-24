@@ -1,6 +1,13 @@
 "use strict";
 
-class Mesh {
+import Vertex from "./vertex";
+import Face from "./face";
+import Halfedge from "./halfedge";
+import Edge from "./edge";
+import Corner from "./corner";
+import Vector from "./../linear-algebra/vector";
+
+export default class Mesh {
 	/**
 	 * This class represents a Mesh.
 	 * @constructor module:Core.Mesh
@@ -36,7 +43,7 @@ class Mesh {
 	/**
 	 * Constructs this mesh.
 	 * @method module:Core.Mesh#build
-	 * @param {Object} polygonSoup A polygon soup mesh containing vertex positions and indices.
+	 * @param {{v: LinearAlgebra.Vector[], f: number[]}} polygonSoup A polygon soup mesh containing vertex positions and indices.
 	 * @param {module:LinearAlgebra.Vector[]} polygonSoup.v The vertex positions of the polygon soup mesh.
 	 * @param {number[]} polygonSoup.f The indices of the polygon soup mesh.
 	 * @returns {boolean} True if this mesh is constructed successfully and false if not
@@ -392,7 +399,7 @@ class Mesh {
  * let i = vertexIndex[v];
  * console.log(i); // prints 0
  */
-function indexElements(elementList) {
+export function indexElements(elementList) {
 	let i = 0;
 	let index = {};
 	for (let element of elementList) {

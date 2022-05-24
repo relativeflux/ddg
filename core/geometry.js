@@ -1,6 +1,9 @@
 "use strict";
 
-class Geometry {
+import Mesh from "./mesh";
+import Vector from "./../linear-algebra/vector";
+
+export default class Geometry {
 	/**
 	 * This class represents the geometry of a {@link module:Core.Mesh Mesh}. This includes information such
 	 * as the position of vertices as well as methods to compute edge lengths, corner
@@ -9,7 +12,7 @@ class Geometry {
 	 * @param {module:Core.Mesh} mesh The mesh this class describes the geometry of.
 	 * @param {module:LinearAlgebra.Vector[]} positions An array containing the position of each vertex in a mesh.
 	 * @param {boolean} normalizePositions flag to indicate whether positions should be normalized. Default value is true.
-	 * @property {module:Core.Mesh} mesh The mesh this class describes the geometry of.
+	 * @property {Core.Mesh} mesh The mesh this class describes the geometry of.
 	 * @property {Object} positions A dictionary mapping each vertex to a normalized position.
 	 */
 	constructor(mesh, positions, normalizePositions = true) {

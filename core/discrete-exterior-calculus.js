@@ -4,7 +4,7 @@
  * This class contains methods to build common {@link https://cs.cmu.edu/~kmcrane/Projects/DDG/paper.pdf discrete exterior calculus} operators.
  * @memberof module:Core
  */
-class DEC {
+export default class DEC {
 	/**
 	 * Builds a sparse diagonal matrix encoding the Hodge operator on 0-forms.
 	 * By convention, the area of a vertex is 1.

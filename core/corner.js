@@ -1,6 +1,6 @@
 "use strict";
 
-class Corner {
+export default class Corner {
 	/**
 	 * This class represents a corner in a {@link module:Core.Mesh Mesh}. It is a convenience
 	 * wrapper around {@link module:Core.Halfedge Halfedge} - each corner stores the halfedge opposite to it.

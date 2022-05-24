@@ -1,6 +1,6 @@
 "use strict";
 
-class DenseMatrix {
+export default class DenseMatrix {
 	/**
 	 * This class represents a real m by n real matrix where every entry, including
 	 * zero-valued entries, is stored explicitly. Do not create a DenseMatrix

@@ -1,6 +1,6 @@
 "use strict";
 
-class Complex {
+export default class Complex {
 	/**
 	 * This class represents a complex number a + bi.
 	 * @constructor module:LinearAlgebra.Complex
