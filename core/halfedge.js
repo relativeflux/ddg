@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * This module implements a halfedge mesh data structure and its associated geometry.
@@ -23,38 +23,38 @@
  *
  * @module Core
  */
- export default class Halfedge {
-	/**
-	 * This class defines the connectivity of a {@link module:Core.Mesh Mesh}.
-	 * @constructor module:Core.Halfedge
-	 * @property {module:Core.Vertex} vertex The vertex at the base of this halfedge.
-	 * @property {module:Core.Edge} edge The edge associated with this halfedge.
-	 * @property {module:Core.Face} face The face associated with this halfedge.
-	 * @property {module:Core.Corner} corner The corner opposite to this halfedge. Undefined if this halfedge is on the boundary.
-	 * @property {module:Core.Halfedge} next The next halfedge (in CCW order) in this halfedge's face.
-	 * @property {module:Core.Halfedge} prev The previous halfedge (in CCW order) in this halfedge's face.
-	 * @property {module:Core.Halfedge} twin The other halfedge associated with this halfedge's edge.
-	 * @property {boolean} onBoundary A flag that indicates whether this halfedge is on a boundary.
-	 */
-	constructor() {
-		this.vertex = undefined;
-		this.edge = undefined;
-		this.face = undefined;
-		this.corner = undefined;
-		this.next = undefined;
-		this.prev = undefined;
-		this.twin = undefined;
-		this.onBoundary = undefined;
-		this.index = -1; // an ID between 0 and |H| - 1, where |H| is the number of halfedges in a mesh
-	}
+export default class Halfedge {
+  /**
+   * This class defines the connectivity of a {@link module:Core.Mesh Mesh}.
+   * @constructor module:Core.Halfedge
+   * @property {module:Core.Vertex} vertex The vertex at the base of this halfedge.
+   * @property {module:Core.Edge} edge The edge associated with this halfedge.
+   * @property {module:Core.Face} face The face associated with this halfedge.
+   * @property {module:Core.Corner} corner The corner opposite to this halfedge. Undefined if this halfedge is on the boundary.
+   * @property {module:Core.Halfedge} next The next halfedge (in CCW order) in this halfedge's face.
+   * @property {module:Core.Halfedge} prev The previous halfedge (in CCW order) in this halfedge's face.
+   * @property {module:Core.Halfedge} twin The other halfedge associated with this halfedge's edge.
+   * @property {boolean} onBoundary A flag that indicates whether this halfedge is on a boundary.
+   */
+  constructor() {
+    this.vertex = undefined;
+    this.edge = undefined;
+    this.face = undefined;
+    this.corner = undefined;
+    this.next = undefined;
+    this.prev = undefined;
+    this.twin = undefined;
+    this.onBoundary = undefined;
+    this.index = -1; // an ID between 0 and |H| - 1, where |H| is the number of halfedges in a mesh
+  }
 
-	/**
-	 * Defines a string representation for this halfedge as its index.
-	 * @ignore
-	 * @method module:Core.Halfedge#toString
-	 * @returns {string}
-	 */
-	toString() {
-		return this.index;
-	}
+  /**
+   * Defines a string representation for this halfedge as its index.
+   * @ignore
+   * @method module:Core.Halfedge#toString
+   * @returns {string}
+   */
+  toString() {
+    return this.index;
+  }
 }
