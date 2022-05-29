@@ -17,7 +17,7 @@ export default class Geometry {
 	 */
 	constructor(mesh, positions, normalizePositions = true) {
 		this.mesh = mesh;
-		this.positions = {};
+		this.positions = [];
 		for (let i = 0; i < positions.length; i++) {
 			let v = this.mesh.vertices[i];
 			let p = positions[i];
