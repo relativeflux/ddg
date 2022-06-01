@@ -57,7 +57,7 @@ export default class Geometry {
    * Computes the midpoint of an edge.
    * @method module:Core.Geometry#midpoint
    * @param {module:Core.Edge} e The edge whose midpoint needs to be computed.
-   * @returns {number}
+   * @returns {Vector}
    */
   midpoint(e) {
     let h = e.halfedge;
