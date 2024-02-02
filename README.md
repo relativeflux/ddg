@@ -2,9 +2,10 @@
 
 ## Discrete Differential Geometry
 
-This repository extracts the core Discrete Differential Geometry code from [geometry-processing-js](https://github.com/Martin-Eriksson/geometry-processing-js).
+This repository extracts the main [Discrete Differential Geometry](https://www.ams.org/publications/journals/notices/201710/rnoti-p1153.pdf) code from [geometry-processing-js](https://github.com/Martin-Eriksson/geometry-processing-js):
 
-At a high level, the framework is divided into three parts - a flexible a halfedge mesh data structure, an optimized linear algebra package (based on [Eigen](https://eigen.tuxfamily.org)), and code for various geometry processing algorithms. Each algorithm comes with its own viewer for rendering.
+- [core](https://github.com/relativeflux/ddg/tree/master/core) - A flexible halfedge mesh data structure.
+- [linear-algebra](https://github.com/relativeflux/ddg/tree/master/linear-algebra) - An optimized linear algebra package (based on [Eigen](https://eigen.tuxfamily.org)),
 
 ### Code Snippet
 
